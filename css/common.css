@@ -1,0 +1,134 @@
+body{
+	text-align: center;
+	background-image: url(../images/background.jpg); 
+}
+
+main{
+	width: 1160px;
+	margin:0 auto 0 auto;
+	text-align: left;
+	position:relative;
+	
+}
+
+header{
+	position: absolute;
+	top:0px;
+}
+
+//nav{
+
+	position: absolute;
+	left: 0px;
+	top: 200px;
+	width: 1160px;
+	height: 40px;
+	background: rgba(0,0,0);
+	text-align: center;
+	display: inline;
+}
+
+#navLinks {
+	position: absolute;
+	left: 0px;
+	top: 500px;
+	width: 1160px;
+	height: 40px;
+	background: rgba(50,50,50);
+	text-align: center;
+	display: inline;
+}
+
+#navLinks ul {
+	margin: 0 auto; 
+}
+
+#navLinks li{
+	width: 10%;
+	margin-right: 5px;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	list-style: none;
+}
+
+#navLinks a {
+	width: 100%;
+}
+
+section{
+	position: absolute;
+	left:0px;
+	top:540px;
+	background:rgba(240,240,240);
+	width:1160px;
+	height:1660px;
+}
+
+footer{
+	position: absolute;
+	left:0px;
+	top:2200px;
+	background:rgba(0,0,0);
+	width:1160px;
+	height: 40px;
+	color:white;
+	text-align:center; 
+}
+
+h1{
+	font-size: 2em;
+	letter-spacing:0.1em;
+	text-indent:1.8em;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+a:link, a:visited {
+    background-color: rgba (70,70,70);
+    color: ivory;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: black;
+	text-decoration: underline;
+}
+
+ol{
+	list-style-image: url(../images/favicon.ico)
+}
+
+#footer_list li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 100px;
+	
+}
+
+.rightfloat{
+	float:right;
+	margin-right:10px;
+}
+
+.leftfloat{
+	float:left;
+	margin-left:10px
+}
+
+p{
+	font-size:20px;
+	margin-left:5px
+}
+	
+h3{
+	font-size:25px
+}
+
+.otherLinks{
+	color:red;
+	background: gray;
+}

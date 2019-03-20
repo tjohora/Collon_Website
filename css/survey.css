@@ -1,0 +1,37 @@
+h1{
+	background-color: #436EEE;
+}
+
+h2{
+	margin-left: 50px;
+	text-decoration:underline;
+}
+	
+.title{
+	font-size:25px;
+	margin-left:30px;
+}
+
+.button {
+	background-color: #008CBA;
+	color: white;
+	padding: 10px 40px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 18px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	margin-left:80px;
+}
+
+table, th, td{
+	margin-left:50px;
+	margin-right:50px;
+	border: 1px solid black;
+	
+}
+
+.bigTextbox{
+	margin-left:70px;
+}
+
+
