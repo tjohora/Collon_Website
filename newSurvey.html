@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title> Collon New Submission </title>
+		
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		
+		<link rel="stylesheet" type="text/css" href="css/survey.css" />
+		
+	</head>
+	
+	<body>
+		<main>
+			<header>
+			<img src = "images/NewBanner.jpg" width = "1160" height="500" alt = "Sign of Collon(Irish spelling)">
+			</header>
+			
+			<nav id="navLinks"> 
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="history.html">History</a></li>
+					<li><a href="area.html">Area</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="survey.html">Survey</a></li>
+				</ul>
+			</nav>
+			
+			<section>
+
+			<h1>Survey</h1>
+				
+			<h2>Please fill out the survey</h2>
+			
+			<form action="addSurvey.php" method='post'>
+			
+				<label class="title">1. What is your FIRST name? (Leave blank if you want)</label>
+					<input type="text" name="userName" size="30" />
+				
+				<br/><br />
+				
+				<label class="title">2. What county are you from?</label>
+					<select id="homeCounty" name="userAddress" required>
+						<option value="">Choose...</option>
+						<option value="Antrim">Antrim</option>
+						<option value="Armagh">Armagh</option>
+						<option value="Carlow">Carlow</option>
+						<option value="Cavan">Cavan</option>
+						<option value="Clare">Clare</option>
+						<option value="Cork">Cork</option>
+						<option value="Donegal">Donegal</option>
+						<option value="Down">Down</option>
+						<option value="Dublin">Dublin</option>
+						<option value="Fermanagh">Fermanagh</option>
+						<option value="Galway">Galway</option>
+						<option value="Kerry">Kerry</option>
+						<option value="Kildare">Kildare</option>
+						<option value="Kilkenny">Kilkenny</option>
+						<option value="Laois">Laois</option>
+						<option value="Leitrim">Leitrim</option>
+						<option value="Limerick">Limerick</option>
+						<option value="Longford">Longford</option>
+						<option value="Louth">Louth</option>
+						<option value="Mayo">Mayo</option>
+						<option value="Meath">Meath</option>
+						<option value="Monaghan">Monaghan</option>
+						<option value="Offaly">Offaly</option>
+						<option value="Roscommon">Roscommon</option>
+						<option value="Sligo">Sligo</option>
+						<option value="Tipperary">Tipperary</option>
+						<option value="Tyrone">Tyrone</option>
+						<option value="Waterford">Waterford</option>
+						<option value="Westmeath">Westmeath</option>
+						<option value="Wexford">Wexford</option>
+						<option value="Wicklow">Wicklow</option>
+					</select>
+				
+				<br/><br />	
+				
+				<label class="title">3. What is your age?</label>
+					<input type="number" name="userAge" size="10" required />
+				
+				<br/><br/>		
+				
+				<p class="title">4. Have you been to Collon?</p>
+				<label class="title" for="yes">Yes</label><input type="radio" name="question1" value="yes" />
+				<label class="title" for="no">No</label><input type="radio" name="question1" value="no" />
+				
+				<br/><br/>
+				
+				<p class="title">5. Do you think Collon looks nice?</p>
+				<label class="title" for="yes">Yes</label><input type="radio" name="question2" value="yes" />
+				<label class="title" for="no">No</label><input type="radio" name="question2" value="no" />
+
+				<br /><br /><br />
+				
+				
+				<label class="title">6. Why/Why not?</label><br/>
+					<textarea class="bigTextbox" name="question3" rows="5" cols="85" required></textarea>	
+				<br /><br />
+				
+				<label class="title">7. Any other comments?</label><br/>
+					<textarea class="bigTextbox" name="userComment" rows="5" cols="85" required></textarea>				
+				<br/><br/>
+				
+				<input class="button" type='submit' value='Submit your survey' name='addSurvey' />
+			</form>
+			
+			</section>
+			
+			<footer>
+				<div id="footer_list">
+					<ul>
+						<li>Copyright of TJ O'Hora</li>
+						<li>Collon</li>
+						<li>Co.Louth</li>
+						<li>Ireland</li>
+					</ul>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>

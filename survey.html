@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		
+		<title> Collon Survey </title>
+		
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/survey.css" />
+		
+	</head>
+	
+	<body>
+		<main>
+			<header>
+			<img src = "images/NewBanner.jpg" width = "1160" height="500" alt = "Sign of Collon(Irish spelling)">
+			</header>
+			
+			<nav id="navLinks"> 
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="history.html">History</a></li>
+					<li><a href="area.html">Area</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="survey.html">Survey</a></li>
+				</ul>
+			</nav>
+			
+			<section>
+			
+			<h1>Survey</h1>
+		
+			<p>It would mean a lot if you could take this 5 minute survey about Collon and this website!</p>
+			
+			<label class="title">Fill out the survey here:</label><br />
+			<button class="button"  onclick="window.location.href = 'newSurvey.html'">New submission</button>
+			
+			<br/><br/><br/>
+			
+			
+			<label class="title">All survey submissions:</label><br />
+			<button class="button" onclick="window.location.href='allSurvey.php'">Display all</button><br />
+			
+			<br/><br/>
+			
+			<label class="title">Search for particular first name of a submitter</label>
+			<form action="Survey_Name.php" method='post'>
+				<input class="button" type='submit' value='Display name' name='searchName' />
+				<input type="text" name="theName" size="31" placeholder="Enter a name" required />
+			</form>
+			
+			<br/><br/>
+			
+			<label class="title" for="homeCounty">See results of where people are from:</label>
+			<form action="Survey_HomeCounty.php" method='post'>
+			<input class="button" type="submit" value="Display results" />
+				<select id="homeCounty" name="homeCounty" required>
+					<option value="">Choose...</option>
+					<option value="Antrim">Antrim</option>
+					<option value="Armagh">Armagh</option>
+					<option value="Carlow">Carlow</option>
+					<option value="Cavan">Cavan</option>
+					<option value="Clare">Clare</option>
+					<option value="Cork">Cork</option>
+					<option value="Donegal">Donegal</option>
+					<option value="Down">Down</option>
+					<option value="Dublin">Dublin</option>
+					<option value="Fermanagh">Fermanagh</option>
+					<option value="Galway">Galway</option>
+					<option value="Kerry">Kerry</option>
+					<option value="Kildare">Kildare</option>
+					<option value="Kilkenny">Kilkenny</option>
+					<option value="Laois">Laois</option>
+					<option value="Leitrim">Leitrim</option>
+					<option value="Limerick">Limerick</option>
+					<option value="Longford">Longford</option>
+					<option value="Louth">Louth</option>
+					<option value="Mayo">Mayo</option>
+					<option value="Meath">Meath</option>
+					<option value="Monaghan">Monaghan</option>
+					<option value="Offaly">Offaly</option>
+					<option value="Roscommon">Roscommon</option>
+					<option value="Sligo">Sligo</option>
+					<option value="Tipperary">Tipperary</option>
+					<option value="Tyrone">Tyrone</option>
+					<option value="Waterford">Waterford</option>
+					<option value="Westmeath">Westmeath</option>
+					<option value="Wexford">Wexford</option>
+					<option value="Wicklow">Wicklow</option>
+				</select>
+			</form>
+			
+			<br/><br/>
+			
+			<label class="title" for="beenToCollon">See results of people on how they answered "Have ever been to Collon?":</label>
+			<form action="Survey_BeenToCollon.php" method='post'>
+			<input class="button" type="submit" value="Display results" />
+				<select id="beenToCollon" name="beenToCollon" required>
+					<option value="">Choose...</option>
+					<option value="yes">yes</option>
+					<option value="no">no</option>
+				</select>
+			</form>
+			
+			<br/><br/>
+			
+			<label class="title" for="likeCollon">See results of people on how they answered "Do you like Collon?":</label>
+			<form action="Survey_LikeCollon.php" method='post'>
+			<input class="button" type="submit" value="Display results" />
+				<select id="likeCollon" name="likeCollon" required>
+					<option value="">Choose...</option>
+					<option value="yes">yes</option>
+					<option value="no">no</option>
+				</select>
+			</form>
+			
+			<br/><br/>
+			
+			</section>
+			
+			<footer>
+				<div id="footer_list">
+					<ul>
+						<li>Copyright of TJ O'Hora</li>
+						<li>Collon</li>
+						<li>Co.Louth</li>
+						<li>Ireland</li>
+					</ul>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
